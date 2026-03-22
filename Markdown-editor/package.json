@@ -1,0 +1,27 @@
+{
+  "name": "markdown-editor",
+  "version": "1.2.0",
+  "description": "Markdown Editor",
+  "author": "Jose Mateos de la Cruz",
+  "main": "index.js",
+  "scripts": {
+    "start": "set DEBUG=true electron .",
+    "publish:github": "npx electron-builder --win -p always"
+  },
+  "build": {
+    "appId": "com.my.markdown-editor",
+    "publish": {
+      "provider": "github",
+      "owner": "JOSE19291",
+      "repo": "electron-updates"
+    }
+  },
+  "devDependencies": {
+    "electron": "^28.3.3",
+    "electron-builder": "^24.13.3"
+  },
+  "dependencies": {
+    "electron-updater": "^6.8.3",
+    "simplemde": "^1.11.2"
+  }
+}
